@@ -1,16 +1,15 @@
 
 
 
-.col-lg-4, .col-md-6, .col-sm-12 {
-
-}
 
 p {
+	font-family: "Palatino Linotype"; 
 	background-color: gray; 
 	border: 2px solid black; 
 	box-sizing: border-box; 
 	margin: 20px; 	
 	padding: 15px;
+	padding-top: 30px;
 }
 
 h1 {
@@ -21,11 +20,15 @@ h1 {
 h2 {
   border: 2px solid black;
   font-family: Helvetica; 
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;  
-  width: 100px;
-  position: relative;
-  bottom: -7px; 
+  width: 110px;
+  position: absolute;
+
+  /*margin-right: auto;
+  margin-left: auto; */
+
+   top: -16px; 
    right: 20px; 
   float: right; 
 }
@@ -34,19 +37,25 @@ h2 {
 	width: 100%;
 }
 
-.pnk {
+.section {
+	position: relative;
+}
+
+
+.chicken {
 	background-color: pink; 
 }
-.rd {
+.beef {
 	background-color: red; 
+	color: white;
 }
-.grn {
+.sushi {
 	background-color: green; 
 }
 
 /*desktop*/
 @media (min-width: 992px) {
-	/*.d1, .d2, .d3 */.col-lg-4, .col-lg-6, .col-lg-12{
+	.col-lg-4, .col-lg-6, .col-lg-12 {
 		
 		float: left;   
 		box-sizing: border-box;
@@ -71,30 +80,30 @@ h2 {
 @media (min-width: 768px) and (max-width: 991px) {
 	
 	
-	/*.d1, .d2, .d3 */ .col-md-4, .col-md-6, .col-md-12{
+	.col-md-4, .col-md-6, .col-md-12 {
 		float: left;  
 		box-sizing: border-box;
 		}
 
 
-  .col-lg-4 {
+  .col-md-4 {
     width: 30%;
   }
   
-  .col-lg-6 {
+  .col-md-6 {
     width: 45%;
   }
 
-  .col-lg-12 {
+  .col-md-12 {
     width: 90%;
   }
 	}
 
 /*mobile*/
-@media (min-width: 767px) {
+@media (max-width: 767px) {
 	
 	
-	/*.d1, .d2, .d3 */ ..col-sm-4, .col-sm-6, .col-sm-12{
+	 .col-sm-4, .col-sm-6, .col-sm-12 {
 		float: left; 
 		box-sizing: border-box;
 		}
